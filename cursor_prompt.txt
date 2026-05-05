@@ -1,0 +1,8 @@
+請幫我在目前資料夾建立一支 Go CLI 工具 `fixed_uuid_generator`，需求如下：
+1. 固定內嵌 90 筆 uuid config，不要再從 uuid.txt 讀取。
+2. 只讀 game.txt，格式為 tab-separated，header 是 Platform	GameKey。
+3. 每款遊戲展開成 3 筆：Platform/GameKey、Platform/GameKey-w、Platform/GameKey-t。
+4. 依序套用固定 uuid config，輸出 uuid_new.txt，格式為 `uuid<TAB>name`。
+5. 最多允許 30 款遊戲，超過就報錯。
+6. 請加上基本錯誤處理與 README。
+7. 我希望最後能用這個指令執行：`go run . -games game.txt -out uuid_new.txt`。

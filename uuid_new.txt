@@ -1,0 +1,6 @@
+2284:140	steam/game1
+2284:194	steam/game1-w
+2284:275	steam/game1-t
+2284:146	steam/game2
+2284:203	steam/game2-w
+2284:281	steam/game2-t
