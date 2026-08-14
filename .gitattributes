@@ -1,0 +1,2 @@
+# macOS 雙擊腳本：必須是 LF，否則 shebang 會變成 /bin/bash^M 無法執行
+*.command text eol=lf
