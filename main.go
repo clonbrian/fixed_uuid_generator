@@ -977,7 +977,7 @@ func readGames(path string) ([]Game, error) {
 		}
 
 		platform := strings.TrimSpace(fields[0])
-		gameKey := strings.TrimSpace(fields[1])
+		gameKey := strings.ReplaceAll(strings.TrimSpace(fields[1]), " ", "")
 		if platform == "" || gameKey == "" {
 			return nil, fmt.Errorf("game.txt 第 %d 行 Platform 或 GameKey 為空：%q", lineNo, raw)
 		}
